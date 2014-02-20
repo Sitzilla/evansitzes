@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+$font-family-sans-serif: 'Loto';
+
+$body-bg: #bdc3c7;
+
+$navbar-default-bg: #2c3e50;
+$navbar-default-link-color: #e74c3c;
+$navbar-default-link-hover-color: blue;
+
+/* List group */
+.list-group {
+  float: left;
+  color: green;
+
+}
+
+
+$brand-primary: #e74c3c;
+$jumbotron-bg: #2c3e50;
+$jumbotron-heading-color: #e74c3c;
+
+@import 'bootstrap';
+
+.center {
+  text-align: center;
+}
+
+.control {
+  color: Black;
+}
+
+p {
+  color: Black;
+}
+
+p1 {
+  color: White;
+}
