@@ -5,24 +5,18 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= render 'layouts/viewport' %>
 </head>
 <body>
-	<div class="list-group">
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
-</div>
-
-	
-     <%= link_to "Home", root_path %>
-     <div class="container">
-          <%= yield %>
-     </div>
-
+    <%= render 'layouts/header' %>
+  <div>
+    <%= render 'layouts/list' %>
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <% end %>
+    <%= yield %>
+  </div>
+    <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
 </body>
 </html>
