@@ -1,53 +1,81 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-/* mixins, variables, etc. */
+* {
+   border: 1px solid red !important;
+}
 
-$grayMediumLight: #eaeaea;
+/* mixins, variables, etc. */
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-/* Pages */
-.article {
- 
-  background-color: black;
-}
-.container {
-  background-color: white;
-  float: none;
-} 
-
-
+$grayMediumLight: #eaeaea;
 $font-family-sans-serif: 'Loto';
-
 $body-bg: #bdc3c7;
-
 $navbar-default-bg: #2c3e50;
 $navbar-default-link-color: #e74c3c;
 $navbar-default-link-hover-color: blue;
+$brand-primary: #e74c3c;
+$jumbotron-bg: #2c3e50;
+$jumbotron-heading-color: #e74c3c;
+$table-bg-hover: red;
+
+/* Pages */
+
+.article {
+  background-color: black;
+}
+
+div.container {
+  background-color: white;
+ 
+  width: 60%; 
+  overflow:auto;
+
+} 
+  .bio {
+    color: black;
+    width: 45%;
+    overflow: hidden;
+    float: left;
+
+
+
+  }
+
+  .bio img {
+  width: 100%;
+  float: right;
+  }
+  .news {
+    color: black;
+    width: 45%;
+    overflow: hidden;
+    float: left;
+    margin-right: 5%;  
+  }
+
+aside{
+  float: left;
+  overflow: auto
+}
 
 /* List group */
 .list-group {
-
-    background-color: black;
-  width: 35%;
+margin-top: 200px;
   color: green;
-  margin-right: 15px;
+width: 20%;
+
 
 }
+
 
 /* universal */
 
 html {
   overflow-y: scroll;
-}
-
-body {
-  padding-top: 60px;
 }
 
 section {
@@ -92,11 +120,7 @@ p {
   line-height: 1.7em;
 
 }
-  .bio {
-    color: black;
-    width: 50%;
 
-  }
 
 /* header */
 
@@ -143,9 +167,7 @@ footer {
 }
 
 
-$brand-primary: #e74c3c;
-$jumbotron-bg: #2c3e50;
-$jumbotron-heading-color: #e74c3c;
+
 
 @import 'bootstrap';
 
