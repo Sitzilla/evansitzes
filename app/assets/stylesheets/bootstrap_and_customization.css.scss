@@ -25,10 +25,6 @@ $list-group-hover-bg: #60D5AC;
 
 /* Pages */
 
-.article {
-  background-color: black;
-}
-
 div.container {
   background-color: white;
  
@@ -55,19 +51,42 @@ div.container {
   width: 100%;
   float: right;
   }
+.bottom-part {
+    width: 45%;
+    overflow: hidden;
+    float: left;
+    margin-top: 2.5%; 
+    clear: left;
 
+}
 
+/* Asia Page */
+.pic-row  {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:120%;
+}
 
-  .news {
+.left-pic {
     color: black;
     width: 45%;
     overflow: hidden;
     float: left;
-    margin-right: 5%;  
-  }
-
-
-
+}
+.left-pic img {
+  width: 100%;
+}
+.right-pic {
+    color: black;
+    width: 45%;
+    overflow: hidden;
+    float: right;
+}
+.right-pic img {
+  width: 100%;
+}
 
 /* universal */
 
@@ -138,3 +157,28 @@ p {
   color: Black;
 }
 
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $gray;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
