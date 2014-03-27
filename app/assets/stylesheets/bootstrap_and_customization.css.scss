@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-* {
+/* {
    border: 1px solid red !important;
 }
 
@@ -13,14 +13,15 @@
 }
 $grayMediumLight: #eaeaea;
 $font-family-sans-serif: 'Loto';
-$body-bg: #bdc3c7;
-$navbar-default-bg: #2c3e50;
-$navbar-default-link-color: #e74c3c;
-$navbar-default-link-hover-color: blue;
-$brand-primary: #e74c3c;
-$jumbotron-bg: #2c3e50;
-$jumbotron-heading-color: #e74c3c;
-$table-bg-hover: red;
+$body-bg: #60D5AC;
+$navbar-default-bg: #006F48;
+$navbar-default-link-color: #FF2C00;
+$navbar-default-link-hover-color: #A61D00;
+$brand-primary: #FF2C00;
+$table-bg-hover: #60D5AC;
+$list-group-link-color: #FF2C00;
+$list-group-bg: #006F48;
+$list-group-hover-bg: #60D5AC;
 
 /* Pages */
 
@@ -35,20 +36,28 @@ div.container {
   overflow:auto;
 
 } 
-  .bio {
+  .left-column {
     color: black;
     width: 45%;
     overflow: hidden;
     float: left;
-
-
-
   }
 
-  .bio img {
+
+  .right-column {
+    color: black;
+    width: 45%;
+    overflow: hidden;
+    float: right;
+  }
+
+  .right-column img {
   width: 100%;
   float: right;
   }
+
+
+
   .news {
     color: black;
     width: 45%;
@@ -57,19 +66,7 @@ div.container {
     margin-right: 5%;  
   }
 
-aside{
-  float: left;
-  overflow: auto
-}
 
-/* List group */
-.list-group {
-margin-top: 200px;
-  color: green;
-width: 20%;
-
-
-}
 
 
 /* universal */
@@ -98,6 +95,15 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
+li a {
+  font-size: 1.5em;
+  color: #FF2C00;
+}
+
+.list-group-item {
+  font-size: 1.5em;
+  color: red;
+}
 
 h1 {
   font-size: 3em;
@@ -120,53 +126,6 @@ p {
   line-height: 1.7em;
 
 }
-
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
-}
-
-/* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid gray;
-  color: gray;
-  a {
-    color: gray;
-    &:hover {
-      color: gray;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
-}
-
-
 
 
 @import 'bootstrap';
