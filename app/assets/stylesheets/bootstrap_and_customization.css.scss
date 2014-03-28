@@ -1,3 +1,4 @@
+
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 /* {
@@ -13,24 +14,31 @@
 }
 $grayMediumLight: #eaeaea;
 $font-family-sans-serif: 'Loto';
-$body-bg: #60D5AC;
-$navbar-default-bg: #006F48;
+
+$navbar-default-bg: #04356C;
 $navbar-default-link-color: #FF2C00;
 $navbar-default-link-hover-color: #A61D00;
 $brand-primary: #FF2C00;
-$table-bg-hover: #60D5AC;
+$table-bg-hover: #689AD3;
 $list-group-link-color: #FF2C00;
-$list-group-bg: #006F48;
-$list-group-hover-bg: #60D5AC;
+$list-group-bg: #04356C;
+$list-group-hover-bg: #689AD3;
 
 /* Pages */
+body{
+background: -webkit-linear-gradient(#689AD3, white); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#689AD3, white); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#689AD3, white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#689AD3, white); /* Standard syntax (must be last) */
+background-repeat: no-repeat;
+}
 
 div.container {
   background-color: white;
  
   width: 60%; 
   overflow:auto;
-
+  border-style: groove;
 } 
   .left-column {
     color: black;
@@ -50,15 +58,22 @@ div.container {
   .right-column img {
   width: 100%;
   float: right;
+  border-style: ridge;
   }
-.bottom-part {
-    width: 45%;
-    overflow: hidden;
-    float: left;
-    margin-top: 2.5%; 
-    clear: left;
+.row-full {
+  width: 100%
 
 }
+
+  #feedControl {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width : 45%;
+  float: left;
+  clear: left;
+  }
 
 /* Asia Page */
 .pic-row  {
@@ -122,8 +137,17 @@ li a {
 .list-group-item {
   font-size: 1.5em;
   color: red;
+  box-shadow: 3px 3px red, -0.25em 0 0.4em red, 0 0 0.5em red;
 }
+.navbar {
+box-shadow: 10px 5px 5px black;
 
+}
+.underline {
+text-decoration: underline;
+font-weight: bold;
+font-size:150%;
+}
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -145,7 +169,9 @@ p {
   line-height: 1.7em;
 
 }
-
+ul {
+  list-style-type: none;
+}
 
 @import 'bootstrap';
 
@@ -161,6 +187,7 @@ p {
 
 footer {
   margin-top: 45px;
+
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: $gray;
@@ -172,13 +199,76 @@ footer {
   }
   small {
     float: left;
+    margin-left: 15px;
   }
   ul {
     float: right;
     list-style: none;
     li {
       float: left;
-      margin-left: 10px;
+      margin-right: 15px;
     }
   }
+}
+
+/* Projects */
+
+.panel {
+  width: 25%;
+
+  .panel-heading {
+    background-color: #0D56A6;
+    color: white;
+
+  }
+}
+
+/* resume */
+.container .resume h1 {
+  text-align: left;
+
+}
+  .label {
+
+  width: 40%;
+  background-color: #0D56A6;
+  color: white;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-top: 50px;
+
+}
+
+
+/* < 480px */
+
+@media screen and (max-width: 480px) {
+  .left-column { float: none;
+                width: 100%;
+   }
+  .right-column  { float: none;
+                  width: 100%;
+   }
+  .bottom-part { float: none; }
+
+  .bottom-part  { float: none;
+                 width: 100%;
+   }
+  #feedControl {
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+            margin-left: auto;
+            margin-right: auto;
+            width : 100%;
+            float: none;
+            }
+  .left-pic {
+    width: 100%;
+    float: none;
+  }
+  .right-pic {
+    width: 100%;
+    float: none;
+  }
+
 }

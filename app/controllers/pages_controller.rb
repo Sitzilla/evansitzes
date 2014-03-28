@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 	def asia 
 	end 
 	
-	def interests 
+	def projects 
 	end 
 
 	def resume 

@@ -6,11 +6,17 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
     <%= render 'layouts/viewport' %>
+
+    <%= render 'layouts/rss' %>
+
+
 </head>
 <body>
     <%= render 'layouts/header' %>
   <div>
-
+    <% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-info") %>
+    <% end %>
     <%= yield %>
   </div>
 		<%= render 'layouts/footer' %>

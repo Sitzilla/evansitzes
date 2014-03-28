@@ -4,7 +4,7 @@ TestWebsite::Application.routes.draw do
 
  get "about" => "pages#about"
  get "asia" => "pages#asia"
- get "interests" => "pages#interests"
+ get "projects" => "pages#projects"
  get "resume" => "pages#resume"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

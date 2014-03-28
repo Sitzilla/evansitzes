@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">SitzesSiter</a>
+    <a class="navbar-brand" href="#">SitzesSites</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -15,7 +15,7 @@
 <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "East Asia", asia_path %></li>
-        <li><%= link_to "Interests", interests_path %></li>
+        <li><%= link_to "Projects", projects_path %></li>
         <li><%= link_to "Resume", resume_path %></li>
         <% if user_signed_in? %>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
