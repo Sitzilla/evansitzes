@@ -3,35 +3,66 @@
 		<div class="row-full">
 			<h3 class="underline">Inbound Freight Smoothing Project</h3>
 			<ul>
-				<li>Goal: To smooth the flow of inbound freight </li>
-				<li>Role: Wal-Mart Inbound strategy team</li>
-				<li>Timeframe: Summer 2011</li>
-				<li>Tools: Business Intelligence, Microsoft Access/Excel. VBA </li>
+				<li><b>Goal:</b> To smooth the flow of inbound freight </li>
+				<li><b>Role:</b> Wal-Mart Inbound strategy team</li>
+				<li><b>Timeframe:</b> Summer 2011</li>
 			</ul>
-			<p>Here are the basics of the project:</p>
 
-			<div class="panel panel-default">
-			  <div class="panel-heading">Panel here</div>
+		<%= render 'layouts/tproject' %>
+
+			<p>Volume for Wal-Mart's consolidation centers was uneven; on average we received in more freight on the begining and end of the week.  This created capacity issues in receiving and in personnel scheduling.  As a solution, my project was to balance our inbound volume into these facilities.</p>
+		</br>
+			<p>The initial premise behind balancing this flow was in specifying what days our suppliers shifted.  Transportation time is a fairly fixed value, so by specifying the ship-on day for our suppliers we were able to regulate when their load would arrive at our facilities.  I developed an excel program that took into account several variables such as transit time, shipping capacity constraints, and location of shipping facilities to each other (in order to account for LTL efficiencies) and created a report of when different suppliers should ship loads.</p>
+
+
+			<div class="panel panel-default panel-left">
+			  <div class="panel-heading">Tools used</div>
 			  <div class="panel-body">
-			    <ul>Statics:
-					<li>Goals</li>
-					<li>Roles</li>
-					<li>Timeframes</li>
-					<li>Tools</li>
+			    <ul>
+					<li>Business Intelligence</li>
+					<li>Microsoft Access</li>
+					<li>Microsoft Excel</li>
+					<li>VBA</li>
+					<li>SQL</li>	
 				</ul>
 			 </div>
-</div>
-		</div>
+				</div>
+			</div>	
+
+
+		</br>
+			<p>My team was able to use this report to work across the organization with Replenishment in order to affect these changes accross the organization.  An added side benefit of this project was that I identified myriod suppliers who were shipping small amounts on multiple days of the week. Through this reports logic we were able to consolidate many of these smaller shipments into more cost-effective truckload volumes.</p>
+
+
+
 
 		<div class="row-full">
 			<h3 class="underline">Lead Time Syncronization Project</h3>
 			<ul>
-				<li>Goal: Implement of a new system of syncronized lead times across the organization</li>
-				<li>Role: Sam's Club Logistics Strategy team</li>
-				<li>Timeframe: Summer 2012</li>
-				<li>Tools: Teradata/SQL, Microsoft Access/Excel. VBA </li>
+				<li><b>Goal:</b> Implement of a new system of syncronized lead times across the organization</li>
+				<li><b>Role:</b> Sam's Club Logistics Strategy team</li>
+				<li><b>Timeframe:</b> Summer 2012</li>
+				<li><b>Tools:</b> Teradata/SQL, Microsoft Access/Excel. VBA </li>
 			</ul>
-			<p>Here are the basics of the project:</p>
+
+
+			<p>Lead times for replenishment of products at Sam's Club were previously calculated using a moving average of historical data that automatically updated system lead times on a periodic basis.  While this system worked, it had one key failing: the affect of outliers on the data.  Variability in variables such production or transit times could lead to averages that oscilated between times that were too high or too low.  It was on this basis that we initiated the lead time sync project.</p>
+		</br>
+			<p>The main point of reasoning used is this project was calculating LTs using different variables: Production time + Transit time + Processing time (time spent at a logistical facility).  As a first step I had to reach out to various areas of the organization (Replenishment, Wal-Mart Transportation, ect) and develop a process for collecting, organizing and updating this data. Once I had determined the method for syncing the lead time for a single supplier, the next step was to develop an automation tool that could be used to apply this logic for all suppliers in the Sam's Club supply chain.  This was accomplished with a combination of tools including Teradata and Microsoft Access/Excel, and the writing of various scripts in SQL/VBA.</p>
+		</br>
+		
+			<div class="panel panel-default panel-right">
+			  <div class="panel-heading">Project Resuts</div>
+			  <div class="panel-body">
+			    <ul>
+					<li>Lead reduction of around 450 days</li>
+					<li>Estimated savings of $150,000</li>
+					<li>Increased efficiency in the Supply Chain</li>
+				</ul>
+			 </div>
+			</div>
+		
+			<p>The final step in this project was implementing these changes across the organization and developing a process for maintaining these lead times. I presented to the various team leads in Replenishment and communicated these changes, and developed a discrepency report that would show lead times that needed to be updated in the system.  In the end, using syncronized lead times had multiple benefits.  We were able to reduce overall leadtimes in the organization, as well as driving more LTL loads into our consolidation network, leading to less trucks on the road and real dollar savings for the organization.</p>
 		</div>
 
 		<div class="row-full">

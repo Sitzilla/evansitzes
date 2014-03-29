@@ -60,10 +60,6 @@ div.container {
   float: right;
   border-style: ridge;
   }
-.row-full {
-  width: 100%
-
-}
 
   #feedControl {
   margin-top: 2.5%;
@@ -212,14 +208,37 @@ footer {
 }
 
 /* Projects */
-
+.panel-left {
+float: left;
+}
+.panel-right {
+float: right;
+}
 .panel {
   width: 25%;
-
+  margin-right: 2.5%;
   .panel-heading {
     background-color: #0D56A6;
     color: white;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-align: center; 
+  }
+  .panel-body {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  ul {
+  list-style-type: disc;
+  }
+}
 
+.row-full {
+  width: 100%;
+  clear:left;
+  .table {
+    width: 45%;
+    float: right;
   }
 }
 
@@ -229,14 +248,12 @@ footer {
 
 }
   .label {
-
   width: 40%;
   background-color: #0D56A6;
   color: white;
   font-size: 1.6em;
   line-height: 1.6em;
   margin-top: 50px;
-
 }
 
 
