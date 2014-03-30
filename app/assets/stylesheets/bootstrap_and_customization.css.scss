@@ -40,6 +40,10 @@ div.container {
   overflow:auto;
   border-style: groove;
 } 
+.main {
+  border-top: 1px solid #ececec;
+  padding-top: 15px;
+}
   .left-column {
     color: black;
     width: 45%;
@@ -58,7 +62,10 @@ div.container {
   .right-column img {
   width: 100%;
   float: right;
-  border-style: ridge;
+  border-width: 0.25em;
+  border-style: groove;
+  border-color: #000000;
+
   }
 
   #feedControl {
@@ -75,9 +82,10 @@ div.container {
 .pic-row  {
   width: 100%;
   float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 10px;
   font-size:120%;
+    border-top: 1px solid #ececec;
 }
 
 .left-pic {
@@ -179,6 +187,98 @@ ul {
   color: Black;
 }
 
+/* Projects */
+.panel-left {
+float: left;
+}
+.panel-right {
+float: right;
+}
+.panel {
+  width: 25%;
+  margin: 2.5%;
+
+  .panel-heading {
+    background-color: #0D56A6;
+    color: white;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-align: center; 
+  }
+  .panel-body {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  ul {
+  list-style-type: disc;
+  }
+}
+
+.row-full {
+  width: 100%;
+  clear: left;
+  border-top: 1px solid #ececec;
+  .table {
+    width: 45%;
+    float: right;
+  }
+}
+.rtable {
+    float: left;
+    width: 65%;
+    margin: 0.75%;
+  img {
+  width: 100%;
+  }
+}
+.ctable {
+    float: right;
+    width: 45%;
+    height: auto;
+    margin: 0.75%;
+  img {
+  width: 100%;
+  }
+}
+
+/* resume */
+.resume-head h1 {
+  text-align: left;
+
+}
+  .label {
+  width: 75%;
+  background-color: #0D56A6;
+  color: white;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  margin-top: 50px;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+h6 {
+  font-style: italic;
+    font-size: 1em;
+    line-height: 1em;
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+.title {
+  float: left;
+}
+.date {
+  float: right;
+}
+.info {
+  clear: left;
+  li {
+    list-style-type: disc;
+
+  }
+}
 /* footer */
 
 footer {
@@ -207,75 +307,13 @@ footer {
   }
 }
 
-/* Projects */
-.panel-left {
-float: left;
-}
-.panel-right {
-float: right;
-}
-.panel {
-  width: 25%;
-  margin-right: 2.5%;
-  .panel-heading {
-    background-color: #0D56A6;
-    color: white;
-    font-size: 1.3em;
-    line-height: 1.3em;
-    text-align: center; 
-  }
-  .panel-body {
-    padding-left: 0px;
-    padding-bottom: 0px;
-  }
-  ul {
-  list-style-type: disc;
-  }
-}
-
-.row-full {
-  width: 100%;
-  clear:left;
-  .table {
-    width: 45%;
-    float: right;
-  }
-}
-.rtable {
-    float: left;
-    width: 65%;
-    margin: 0.75%;
-  img {
-  width: 100%;
-  }
-}
-.ctable {
-    float: right;
-    width: 45%;
-    height: auto;
-    margin: 0.75%;
-  img {
-  width: 100%;
-  }
-}
-/* resume */
-.container .resume h1 {
-  text-align: left;
-
-}
-  .label {
-  width: 40%;
-  background-color: #0D56A6;
-  color: white;
-  font-size: 1.6em;
-  line-height: 1.6em;
-  margin-top: 50px;
-}
-
-
 /* < 480px */
 
 @media screen and (max-width: 480px) {
+  div.container {
+    width: 90%;
+  }
+
   .left-column { float: none;
                 width: 100%;
    }
@@ -303,6 +341,13 @@ float: right;
     width: 100%;
     float: none;
   }
+
+  .row-full {
+  .table {
+    width: 100%;
+    float: none;
+  }
+}
   .panel-right {
     width: 100%;
     float: none;
