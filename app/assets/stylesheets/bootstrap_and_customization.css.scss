@@ -16,11 +16,11 @@ $grayMediumLight: #eaeaea;
 $font-family-sans-serif: 'Loto';
 
 $navbar-default-bg: #04356C;
-$navbar-default-link-color: #FF2C00;
-$navbar-default-link-hover-color: #A61D00;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: #FF2C00;
 $brand-primary: #FF2C00;
 $table-bg-hover: #689AD3;
-$list-group-link-color: #FF2C00;
+$list-group-link-color: white;
 $list-group-bg: #04356C;
 $list-group-hover-bg: #689AD3;
 
@@ -65,8 +65,18 @@ div.container {
   border-width: 0.25em;
   border-style: groove;
   border-color: #000000;
-
+    -webkit-transition: all 0,1s ease;
+     -moz-transition: all 0,1s ease;
+       -o-transition: all 0,1s ease;
+      -ms-transition: all 0,1s ease;
+          transition: all 0,1s ease;
+}
+  .right-column img:hover{
+    border-color: white;
+    border-width: 1.5em;
+   -webkit-filter: opacity(0.9);
   }
+  
 
   #feedControl {
   margin-top: 2.5%;
@@ -242,17 +252,29 @@ float: right;
 }
 
 /* resume */
-.resume-head h1 {
-  text-align: left;
+.resume-head {
+ border-bottom: 1px solid #ececec;
+h2 {
 
+h4 {
+  text-align: left;
+  margin: 0px;
 }
+}
+}
+
   .label {
+  
   width: 75%;
   background-color: #0D56A6;
   color: white;
   font-size: 1.6em;
   line-height: 1.6em;
   margin-top: 50px;
+}
+
+.resume-section {
+    border-bottom: 1px solid #ececec;
 }
 
 h5 {
@@ -361,6 +383,19 @@ footer {
     float: none;
   }
   .ctable {
+    width: 100%;
+    float: none;
+  }
+  .title {
+  width: 100%;
+    float: none;
+  }
+  .date {
+    width: 100%;
+    float: none;
+    margin-bottom: 0.5em;
+  }
+  .info {
     width: 100%;
     float: none;
   }
