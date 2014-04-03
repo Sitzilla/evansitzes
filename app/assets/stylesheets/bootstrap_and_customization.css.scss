@@ -12,6 +12,32 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+@mixin left_config {
+    width: 45%;
+    overflow: hidden;
+    float: left;
+}
+@mixin right_config {
+    width: 45%;
+    overflow: hidden;
+    float: right;
+}
+@mixin default_480 {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin default_780 {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
 $grayMediumLight: #eaeaea;
 $font-family-sans-serif: 'Loto';
 
@@ -23,152 +49,6 @@ $table-bg-hover: #689AD3;
 $list-group-link-color: white;
 $list-group-bg: #04356C;
 $list-group-hover-bg: #689AD3;
-
-/* Pages */
-body{
-background: -webkit-linear-gradient(#689AD3, white); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(#689AD3, white); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(#689AD3, white); /* For Firefox 3.6 to 15 */
-background: linear-gradient(#689AD3, white); /* Standard syntax (must be last) */
-background-repeat: no-repeat;
-}
-
-div.container {
-  background-color: white;
- 
-  width: 60%; 
-  overflow:auto;
-  border-style: groove;
-  padding-bottom: 2.55%;
-} 
-.main {
-  border-top: 1px solid #ececec;
-  padding-top: 15px;
-}
-  .left-column {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: left;
-  }
-
-
-  .right-column {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: right;
-  }
-
-  .right-column img {
-  width: 100%;
-  float: right;
-  border-width: 0.25em;
-  border-style: groove;
-  border-color: #000000;
-    -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-  .right-column img:hover{
-    border-color: white;
-    border-width: 0.5em;
-
-  }
-  
-
-  .right-column-economist {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: right;
-    margin-top: 2.5%;
-    
-  }
-    .pic-row-half {
-    width: 100%;
-    clear: left;
-
-  }
-.left-pic-econ {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: left;
-    line-height: 100%;
-    border-right: 5px solid #333;
-    margin-bottom: 2.5%;
-    height: auto;
-
-    .econ-article {
-    margin-top: 1%;
-    line-height: 100%;
-
-
-    }
-}
-
-.right-pic-econ {
-    color: black;
-    width: 45%;
-
-    float: right;
-    height: auto;
-    img {
-      width: 100%;
-        -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-    }
-    img:hover {
-        border: 7px solid #000;
-      border-radius: 75%;
-    }
-}
-
-  #feedControl {
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  margin-left: auto;
-  margin-right: auto;
-  width : 45%;
-  float: left;
-  clear: left;
-  }
-
-/* Asia Page */
-.pic-row  {
-  width: 100%;
-  float: left;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  font-size:120%;
-    border-top: 1px solid #ececec;
-}
-
-.left-pic {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: left;
-
-}
-.left-pic img {
-  width: 100%;
-}
-.right-pic {
-    color: black;
-    width: 45%;
-    overflow: hidden;
-    float: right;
-}
-.right-pic img {
-  width: 100%;
-}
 
 /* universal */
 
@@ -242,15 +122,136 @@ ul {
 
 @import 'bootstrap';
 
-.center {
-  text-align: center;
+/* Pages */
+
+body{
+background: -webkit-linear-gradient(#689AD3, white); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#689AD3, white); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#689AD3, white); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#689AD3, white); /* Standard syntax (must be last) */
+background-repeat: no-repeat;
 }
 
-.control {
-  color: Black;
+div.container {
+  background-color: white;
+ 
+  width: 60%; 
+  overflow:auto;
+  border-style: groove;
+  padding-bottom: 2.55%;
+} 
+.main {
+  border-top: 1px solid #ececec;
+  padding-top: 15px;
 }
+  .left-column {
+    @include left_config;
+  }
+
+
+  .right-column {
+   @include right_config;
+     img {
+      width: 100%;
+      float: right;
+      border-width: 0.25em;
+      border-style: groove;
+      border-color: #000000;
+        -webkit-transition: all 0.5s ease;
+         -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+
+        &:hover{
+          border-color: white;
+          border-width: 0.5em;
+
+      }
+    }
+  }
+
+  .right-column-economist {
+    @include right_config;
+    margin-top: 2.5%;
+    
+  }
+    .pic-row-half {
+    width: 100%;
+    clear: left;
+
+  }
+.left-pic-econ {
+  @include left_config;
+    line-height: 100%;
+    border-right: 5px solid #333;
+    margin-bottom: 2.5%;
+    height: auto;
+
+    .econ-article {
+    margin-top: 1%;
+    line-height: 100%;
+
+
+    }
+}
+
+.right-pic-econ {
+    @include right_config;
+    
+    img {
+      width: 100%;
+        -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+    
+    &:hover {
+        border: 7px solid #000;
+      border-radius: 75%;
+    }
+  }
+}
+
+  #feedControl {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-left: auto;
+  margin-right: auto;
+ @include left_config;
+  clear: left;
+  }
+
+/* Asia Page */
+
+.pic-row  {
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-size:120%;
+    border-top: 1px solid #ececec;
+}
+
+.left-pic {
+  @include left_config;
+
+
+ img {
+  width: 100%;
+  }
+}
+.right-pic {
+  @include right_config;
+}
+.right-pic img {
+  width: 100%;
+}
+
 
 /* Projects */
+
 .panel-left {
 float: left;
 }
@@ -282,22 +283,19 @@ float: right;
   clear: left;
   border-top: 1px solid #ececec;
   .table {
-    width: 45%;
-    float: right;
+    @include right_config;
   }
 }
 .rtable {
     float: left;
-    width: 65%;
+    width: 55%;
     margin: 0.75%;
   img {
   width: 100%;
   }
 }
 .ctable {
-    float: right;
-    width: 45%;
-    height: auto;
+    @include right_config;
     margin: 0.75%;
   img {
   width: 100%;
@@ -402,72 +400,59 @@ footer {
     width: 90%;
   }
 
-  .left-column { float: none;
-                width: 100%;
+  .left-column { 
+    @include default_480;
    }
-  .right-column  { float: none;
-                  width: 100%;
+  .right-column  { 
+    @include default_480;
    }
-  .bottom-part { float: none; }
+  .bottom-part { 
+  @include default_480;
+   }
 
-  .bottom-part  { float: none;
-                 width: 100%;
+  .bottom-part  { 
+    @include default_480;
    }
   .right-column-economist {
-    float: none;
-                 width: 100%;
+    @include default_480;
   }
   #feedControl {
             margin-top: 2.5%;
             margin-bottom: 2.5%;
-            margin-left: auto;
-            margin-right: auto;
-            width : 100%;
-            float: none;
+            @include default_480;
             }
   .left-pic {
-    width: 100%;
-    float: none;
-  }
+    @include default_480;  }
   .right-pic {
-    width: 100%;
-    float: none;
+   @include default_480;
   }
 
   .row-full {
   .table {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
 }
   .panel-right {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
   .panel-left {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
   .rtable {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
   .ctable {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
   .title {
-  width: 100%;
-    float: none;
+  @include default_480;
   }
   .date {
-    width: 100%;
-    float: none;
+    @include default_480;
     margin-bottom: 0.5em;
   }
   .info {
-    width: 100%;
-    float: none;
+    @include default_480;
   }
 }
 
@@ -478,113 +463,58 @@ footer {
     width: 75%;
   }
 
-  .left-column { float: none;
-                width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .left-column { 
+     @include default_780;
        }
-  .right-column  { float: none;
-                  width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .right-column  { 
+     @include default_780;
        }
   .bottom-part { float: none; }
 
-  .bottom-part  { float: none;
-                 width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .bottom-part  { 
+     @include default_780;
        }
   .right-column-economist {
-    float: none;
-                 width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
   #feedControl {
             margin-top: 2.5%;
             margin-bottom: 2.5%;
-            margin-left: auto;
-    display: block;
-      margin-left: auto;
-            margin-right: auto;
-            width : 75%;
-            float: none;
+        @include default_780;
             }
   .left-pic {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
   .right-pic {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
 
   .row-full {
   .table {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
 }
   .panel-right {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
   .panel-left {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
       }
   .rtable {
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-        float: none;
+     @include default_780;
   }
   .ctable {
-    width: 75%;
-    position: center;
-    float: none;
+     @include default_780;
   }
   .title {
-  width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   @include default_780;
         float: none;
   }
   .date {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+     @include default_780;
         margin-bottom: 0.5em;
   }
   .info {
-    width: 75%;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include default_780;
       }
 }
