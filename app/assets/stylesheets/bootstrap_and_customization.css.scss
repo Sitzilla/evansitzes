@@ -1,7 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-/* {
+/* div {
    border: 1px solid red !important;
 }
 
@@ -81,8 +81,11 @@ h1, h2, h3, h4, h5, h6 {
 li a {
   font-size: 1.5em;
   color: #FF2C00;
-
 }
+tr td, tr th {
+  text-align: center;
+}
+
 
 .list-group-item {
   font-size: 1.5em;
@@ -97,6 +100,7 @@ box-shadow: 10px 5px 5px black;
 font-weight: bold;
 font-size:150%;
 margin-bottom: 1%;
+margin-top: 1%;
 }
 h1 {
   font-size: 3em;
@@ -142,7 +146,7 @@ div.container {
   width: 60%; 
   overflow:auto;
   border-style: groove;
-  padding-bottom: 2.55%;
+  padding-bottom: 2.5%;
 } 
 .main {
   border-top: 1px solid #ececec;
@@ -167,14 +171,23 @@ div.container {
 
   .right-column {
    @include right_config;
-     img {
+     
+    .item {
+      max-width: 250px;
+      
+      margin-left:auto;
+      margin-right:auto;    
+      width: 100%;      
+
+     /*img {
       width: 100%;
       max-width: 300px;
       float: right;
       border-width: 0.25em;
       border-style: groove;
       border-color: #000000;
-        -webkit-transition: all 0.5s ease;
+
+/*        -webkit-transition: all 0.5s ease;
          -moz-transition: all 0.5s ease;
            -o-transition: all 0.5s ease;
           -ms-transition: all 0.5s ease;
@@ -185,40 +198,48 @@ div.container {
           border-color: white;
           border-width: 0.5em;
 
-      }
+      }*/
     }
   }
 
   .right-column-economist {
-    @include right_config;
-    margin-top: 2.5%;
+    width: 45%;
+    overflow: hidden;
+    float: right;
     clear: right;
-    
+    margin-top: 2.5%;  
   }
-    .pic-row-half {
+
+  .pic-row-half {
     width: 100%;
     clear: left;
+    height: auto;
 
   }
-.left-pic-econ {
-  @include left_config;
+  .left-pic-econ {
+      width: 45%;
+    overflow: hidden;
+    float: left;
+    clear: left;
     line-height: 100%;
-    border-right: 5px solid #333;
+    border-right: 5px solid #04356C;
     margin-bottom: 2.5%;
     height: auto;
 
     .econ-article {
-    margin-top: 1%;
+    padding-top: 0px;
     line-height: 100%;
+    clear: left;
 
 
     }
-}
+  }
+  .right-pic-econ {
+      @include right_config;
+      vertical-align:middle;
+      img {
 
-.right-pic-econ {
-    @include right_config;
-    
-    img {
+      vertical-align:middle;
       width: 100%;
         -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -242,6 +263,10 @@ div.container {
   clear: left;
   }
 
+.list-padding {
+  padding-left: 2.5%;
+}
+
 /* Asia Page */
 
 .pic-row  {
@@ -249,7 +274,7 @@ div.container {
   float: left;
   padding-top: 20px;
   margin-bottom: 10px;
-  font-size:120%;
+  font-size: 120%;
     border-top: 1px solid #ececec;
 }
 
@@ -295,6 +320,7 @@ float: right;
   }
   ul {
   list-style-type: disc;
+  padding-left: auto;
   }
 }
 
@@ -309,14 +335,14 @@ float: right;
 .rtable {
     float: left;
     width: 55%;
-    margin: 0.75%;
+    margin: 1%;
   img {
   width: 100%;
   }
 }
 .ctable {
     @include right_config;
-    margin: 0.75%;
+    margin: 1%;
   img {
   width: 100%;
   }
@@ -366,7 +392,7 @@ h5 {
 }
 h6 {
   font-style: italic;
-    font-size: 1em;
+    font-size: 1.15em;
     line-height: 1em;
     margin-top: 0px;
     margin-bottom: 2.5%;
