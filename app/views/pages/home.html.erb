@@ -8,23 +8,23 @@
 	        	I am a 24 year old recent graduate of the University of Arkansas.  Though I am young, I have a drive to learn that gives me a constant drive to educate myself.  Currently I am attempting to increace my web-development and coding skills through use of Ruby on Rails, Javascript, and HTML/CSS. This my my first attempt at a website, so while there might be a few bugs/issues, my development skills should only get better from here!  My goal is to become a full stack developer with knowledge of all aspects of web design.  
 	        	</p>
                   <p>
-	        	I have a slew of interests that include reading good books, studying interesting subject matter, and meeting new people. Any questions or observations please feel free to send me a message at esitzes42@yahoo.com. 
+	        	I have a slew of interests that include reading good books, studying interesting subject matter, and meeting new people. Any questions or observations please feel free to send me a message at esitzes42@yahoo.com, or reach out via social media. 
 			</p>
+	</div>
+                  <div class="right-column">
+                  <%= image_tag("formal_pic_reworked.jpg", :alt => "rss feed" ) %>
+            </div>
 
-<%= render 'layouts/list' %>
 
-		</div>
 
-      	<div class="right-column">
-      		<%= image_tag("formal_pic_reworked.jpg", :alt => "rss feed" ) %>
-      	</div>
 
       <div class="right-column-economist">
-      	    <h3 class="underline">Personal pics from The Economist</h3>
+      	    <h3 class="underline">Personal picks from The Economist</h3>
+                <h6>Some personal selections from my favorite source of news</h6>
       	<div class="pic-row-half">
       		<div class="left-pic-econ">
       			<h5>Rise of the Robots</h5>
-      			<p class="econ-article">Prepare for a robot invasion. It will change the way people think about technology</p>
+      			<p class="econ-article">Prepare for a robot invasion. It will change the way people think about technology...</p>
       		</div>
 			<div class="right-pic-econ">
       			<%= link_to image_tag("econ-robots.jpg", :alt => "rss feed" ), "http://www.economist.com/news/leaders/21599762-prepare-robot-invasion-it-will-change-way-people-think-about-technology-rise?zid=291&ah=906e69ad01d2ee51960100b7fa502595",  :target=>"_blank" %>
@@ -33,7 +33,7 @@
       	<div class="pic-row-half">
       		<div class="left-pic-econ">
       			<h5>Holding back half the nation</h5>
-      			<p class="econ-article">Women’s lowly status in the Japanese workplace has barely improved in decades, and the country suffers as a result. Shinzo Abe would like to change that</p>
+      			<p class="econ-article">Women’s lowly status in the Japanese workplace has barely improved in decades. Shinzo Abe would like to change that...</p>
       		</div>
 			<div class="right-pic-econ">
       			<%= link_to image_tag("econ-japan.jpg", :alt => "rss feed" ), "http://www.economist.com/news/briefing/21599763-womens-lowly-status-japanese-workplace-has-barely-improved-decades-and-country", :target=>"_blank" %>
@@ -42,12 +42,27 @@
       	<div class="pic-row-half">
       		<div class="left-pic-econ">
       			<h5>Monetary policy in America</h5>
-      			<p class="econ-article">The Fed's 2% inflation target is not an obstacle but a bout of higher inflation</p>
+      			<p class="econ-article">The Fed's 2% inflation target is not an obstacle but a bout of higher inflation...</p>
       		</div>
 			<div class="right-pic-econ">
       			<%= link_to image_tag("econ-montary.jpg", :alt => "rss feed" ), "http://www.economist.com/blogs/freeexchange/2014/03/monetary-policy-2",  :target=>"_blank" %>
       		</div>
       	</div>
+      </div>
+
+      <div class="left-column">
+            <%= image_tag("facebook.png", :alt => "rss feed" ) %>
+            <%= image_tag("linkedin.jpg", :alt => "rss feed" ) %>
+            <%= image_tag("twitter.jpg", :alt => "rss feed" ) %>
+            <%= image_tag("github.png", :alt => "rss feed" ) %>
+      </div>
+
+      <div class="left-column">
+            <h3 class="underline">Websites that I've created:</h3>
+            <ul>
+                 <li><span class="glyphicon glyphicon-chevron-right"><%= link_to "Pinteresting", "http://omr-pinteresting-evan.herokuapp.com/",  :target=>"_blank" %></span></li>
+                  <li><span class="glyphicon glyphicon-chevron-right"><%= link_to "Sitzes-tweet", "https://sitzes-tweet.herokuapp.com/",  :target=>"_blank" %></span></li>
+            </ul>
       </div>
 
 	<div id="body">
