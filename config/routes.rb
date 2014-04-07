@@ -3,9 +3,13 @@ TestWebsite::Application.routes.draw do
  root "pages#home"
 
  get "about" => "pages#about"
- get "asia" => "pages#asia"
+ 
  get "projects" => "pages#projects"
  get "resume" => "pages#resume"
+
+
+match '/asia', to: 'pages#asia', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

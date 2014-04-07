@@ -174,7 +174,7 @@ div.container {
      
     .item {
       max-width: 100%;
-      max-height: 27em;
+      max-height: 24em;
 
       margin-left:auto;
       margin-right:auto;    
@@ -276,22 +276,35 @@ div.container {
   padding-top: 20px;
   margin-bottom: 10px;
   font-size: 120%;
-    border-top: 1px solid #ececec;
+ /*   border-top: 1px solid #ececec;*/
 }
 
 .left-pic {
-  @include left_config;
+      width: 45%;
+    overflow: hidden;
+    float: left;
+    clear: none;
 
 
  img {
   width: 100%;
+  &:hover {
+    cursor: pointer; cursor: hand;
+    }
+
   }
 }
 .right-pic {
-  @include right_config;
+      width: 45%;
+    overflow: hidden;
+    float: right;
+    clear: none;
 }
 .right-pic img {
   width: 100%;
+  &:hover {
+    cursor: pointer; cursor: hand;
+    }
 }
 
 
