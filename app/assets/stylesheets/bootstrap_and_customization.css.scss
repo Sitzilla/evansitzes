@@ -325,6 +325,28 @@ div.container {
   }
 }
 
+div.description{  
+    position:relative; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;  
+    /* styling bellow */  
+    background-color:#04356C;  
+    font-size:15px;  
+    text-align: center;
+    color:white;  
+     /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+
+    &:hover {
+      color: #FF2C00;
+      cursor: pointer; cursor: hand;
+    }
+}  
+p.description_content{  
+    padding:5px;  
+    margin:0px;  
+}  
 
 /* Projects */
 
@@ -506,7 +528,22 @@ footer {
   .right-pic {
    @include default_480;
   }
+  .holding-right{
+        width: 100%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    
+  }
 
+  .holding-left {
+        width: 100%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
   .row-full {
   .table {
     @include default_480;
@@ -571,7 +608,21 @@ footer {
   .right-pic {
      @include default_780;
       }
+  .holding-right {
+        width: 75%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
 
+  .holding-left {
+        width: 75%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
   .row-full {
   .table {
      @include default_780;
