@@ -107,6 +107,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+
 }
 
 h2 {
@@ -276,15 +277,28 @@ div.container {
   padding-top: 20px;
   margin-bottom: 10px;
   font-size: 120%;
- /*   border-top: 1px solid #ececec;*/
+ border-top: 1px solid #ececec;
 }
 
+.holding-right {
+  display: none;
+      float: right;
+ width: 45%;    
+}
+.holding-left {
+  display: none;
+      float: left;
+ width: 45%;    
+}
 .left-pic {
       width: 45%;
     overflow: hidden;
     float: left;
-    clear: none;
-
+    clear: left;
+    margin-bottom: 5%;
+      border-width: 0.25em;
+      border-style: groove;
+      border-color: #000000;
 
  img {
   width: 100%;
@@ -298,13 +312,17 @@ div.container {
       width: 45%;
     overflow: hidden;
     float: right;
-    clear: none;
-}
-.right-pic img {
+    clear: right;
+    margin-bottom: 5%;    
+          border-width: 0.25em;
+      border-style: groove;
+      border-color: #000000;
+ img {
   width: 100%;
   &:hover {
     cursor: pointer; cursor: hand;
     }
+  }
 }
 
 
