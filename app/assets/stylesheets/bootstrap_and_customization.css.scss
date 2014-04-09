@@ -524,6 +524,9 @@ footer {
     img {
       max-width: 1000px;
     }
+      .item {
+         max-height: 20em;
+  }
    }
   .bottom-part { 
   @include default_480;
@@ -587,6 +590,9 @@ footer {
   }
   .info {
     @include default_480;
+  }
+  .icon {
+    opacity:1;
   }
 }
 
