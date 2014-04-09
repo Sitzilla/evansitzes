@@ -6,11 +6,15 @@ type="text/javascript"></script>
 @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
 </style>
 <script type="text/javascript">
-function load() {
+
+$(document).on('page:load', function() {
 var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
 new GFdynamicFeedControl(feed, "feedControl");
-
-}
+});
+$( document ).ready(function() {
+var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
+new GFdynamicFeedControl(feed, "feedControl");
+	});
 google.load("feeds", "1");
 google.setOnLoadCallback(load);
 </script>
