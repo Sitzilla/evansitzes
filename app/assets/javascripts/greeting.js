@@ -20,12 +20,12 @@ $(document).ready(function(){
   });
 
   $(".fifth").on("click", function() {
-    $(this).parent("div").children(".holding-left").fadeToggle();
+    $(this).parent("div").children(".holding-right").fadeToggle();
     $(this).parent("div").toggleClass("pic-row");
   });
 
   $(".sixth").on("click", function() {
-    $(this).parent("div").children(".holding-right").fadeToggle();
+    $(this).parent("div").children(".holding-left").fadeToggle();
     $(this).parent("div").toggleClass("pic-row");
   });
 });

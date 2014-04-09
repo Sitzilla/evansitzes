@@ -118,7 +118,14 @@ h2 {
   font-weight: normal;
   color: gray;
 }
-
+h4 {
+  font-style: italic;
+    font-size: 3em;
+    line-height: 1em;
+    margin-top: 0px;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
 p {
   font-family: arial;
   font-size: 1.1em;
@@ -175,7 +182,7 @@ div.container {
      
     .item {
       max-width: 100%;
-      max-height: 24em;
+      max-height: 26em;
 
       margin-left:auto;
       margin-right:auto;    
@@ -269,6 +276,14 @@ div.container {
   padding-left: 2.5%;
 }
 
+.icon {
+  opacity:0.5;
+transition-property: opacity; transition-duration: 500ms;
+    &:hover {
+  opacity:1;
+  }
+}
+
 /* Asia Page */
 
 .pic-row  {
@@ -290,6 +305,31 @@ div.container {
       float: left;
  width: 45%;    
 }
+
+
+.description{  
+    position:relative; /* absolute position (so we can position it where we want)*/  
+    bottom:0px; /* position will be on bottom */  
+    left:0px;  
+    width:100%;  
+    /* styling bellow */  
+    background-color:#04356C;  
+    font-size:15px;  
+    text-align: center;
+    color:white;  
+     /* transparency */  
+    filter:alpha(opacity=60); /* IE transparency */  
+
+    &:hover {
+      color: #FF2C00;
+      cursor: pointer; cursor: hand;
+    }
+}  
+p.description_content{  
+    padding:5px;  
+    margin:0px;  
+}  
+
 .left-pic {
       width: 45%;
     overflow: hidden;
@@ -324,29 +364,6 @@ div.container {
     }
   }
 }
-
-div.description{  
-    position:relative; /* absolute position (so we can position it where we want)*/  
-    bottom:0px; /* position will be on bottom */  
-    left:0px;  
-    width:100%;  
-    /* styling bellow */  
-    background-color:#04356C;  
-    font-size:15px;  
-    text-align: center;
-    color:white;  
-     /* transparency */  
-    filter:alpha(opacity=60); /* IE transparency */  
-
-    &:hover {
-      color: #FF2C00;
-      cursor: pointer; cursor: hand;
-    }
-}  
-p.description_content{  
-    padding:5px;  
-    margin:0px;  
-}  
 
 /* Projects */
 
