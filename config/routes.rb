@@ -7,6 +7,7 @@ TestWebsite::Application.routes.draw do
  get "projects" => "pages#projects"
  get "resume" => "pages#resume"
 
+ get "index" => redirect("/home")
 
 match '/asia', to: 'pages#asia', via: 'get'
 
