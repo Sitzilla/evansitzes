@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'meta-tags', :require => 'meta_tags'
 
 group :development, :test do
 	gem 'sqlite3'
