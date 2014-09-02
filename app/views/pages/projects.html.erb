@@ -6,17 +6,17 @@
 		<div class="row-full">
 			<h3 class="underline">Inbound Freight Smoothing Project</h3>
 			<ul>
-				<li><b>Goal:</b> To smooth the flow of inbound freight </li>
-				<li><b>Role:</b> Wal-Mart Inbound strategy team</li>
+				<li><b>Goal:</b> To smooth the flow of inbound freight volume</li>
+				<li><b>Role:</b> Wal-Mart Inbound Strategy Team</li>
 				<li><b>Timeframe:</b> Summer 2011</li>
-				<li><b>Tools Used:</b> Business Intelligence, Microsoft Access/Excel, VBA, SQL </li>
+				<li><b>Tools Used:</b> BI, Microsoft Access/Excel, VBA, SQL </li>
 			</ul>
 
 		<%= render 'layouts/tproject' %>
 
-			<p>Volume for Wal-Mart's consolidation centers was uneven; on average we received in more freight on the beginning and end of the week.  This created capacity issues in receiving and in personnel scheduling.  As a solution, my project was to balance our inbound volume into these facilities.</p>
+			<p>My summer project as a Wal-Mart intern was optimizing the inbound freight volume into our consolidation facilities and creating a process for automating the maintenance of these calculations. Before the implementation of my project the volume into Wal-Mart's consolidation centers was uneven; on average more freight volume tended to be concentrated towards the beginning and end of the week. This created capacity issues on the receiving dock and in personnel scheduling.</p>
 		</br>
-			<p>The initial premise behind balancing this flow was in specifying what days our suppliers shifted.  Transportation time is a fairly fixed value, so by specifying the ship-on day for our suppliers we were able to regulate when their load would arrive at our facilities.  I developed an excel program that took into account several variables such as transit time, shipping capacity constraints, and location of shipping facilities to each other (in order to account for LTL efficiencies) and created a report of when different suppliers should ship loads.</p>
+			<p>The initial premise behind balancing this flow lay in specifying what days our suppliers shipped their products. We identified several variables involved, such as transportation time, LTL vs full truck load, and supplier location. I then developed an excel application that took all of this logistical data and calculated when different suppliers should ship loads, thereby regulating when their products would arrive at our facilities.</p>
 
 
 			<div class="panel panel-default panel-left">
@@ -29,11 +29,9 @@
 				</ul>
 			 </div>
 				</div>
-			
-
 
 		</br>
-			<p>My team was able to use this report to work across the organization with Replenishment in order to affect these changes accross the organization.  An added side benefit of this project was that I identified myriad suppliers who were shipping small amounts on multiple days of the week. Through this reports logic we were able to consolidate many of these smaller shipments into more cost-effective truckload volumes.</p>
+			<p>My team was able to use this report to work across the organization with our Replenishment and Inbound teams in order to implement these changes.  An added side benefit of this project was that I identified a large number of suppliers who were shipping small amounts on multiple days of the week. Through this report’s combination logic we were able to consolidate many of these smaller shipments into more cost-effective truckload volumes.</p>
 
 			</div>	
 
@@ -42,15 +40,15 @@
 			<h3 class="underline">Lead Time Syncronization Project</h3>
 			<ul>
 				<li><b>Goal:</b> Implement of a new system of syncronized lead times across the organization</li>
-				<li><b>Role:</b> Sam's Club Logistics Strategy team</li>
+				<li><b>Role:</b> Sam's Club Logistics Strategy Team</li>
 				<li><b>Timeframe:</b> Summer 2012</li>
 				<li><b>Tools Used:</b> Teradata/SQL, Microsoft Access/Excel. VBA </li>
 			</ul>
 
 
-			<p>Lead times for replenishment of products at Sam's Club were previously calculated using a moving average of historical data that automatically updated system lead times on a periodic basis.  While this system worked, it had one key failing: the effect of outliers on the data.  Variability in variables such production or transit times could lead to averages that oscillated between times that were too high or too low.  It was on this basis that we initiated the lead time sync project.</p>
+			<p>Lead times for replenishment of products at Sam's Club were previously calculated using a moving average of historical data that automatically updated system lead times on a quarterly basis. While this process worked, it had one key failing: the effect of outliers on the data. Variability in certain aspects such as production or transit times could lead to averages that oscillated between times that were too high or too low. It was on this basis that we initiated the lead time synchronization project.</p>
 		</br>
-			<p>The main point of reasoning used is this project was calculating LTs using different variables: Production time + Transit time + Processing time (time spent at a logistical facility).  As a first step I had to reach out to various areas of the organization (Replenishment, Wal-Mart Transportation, ect) and develop a process for collecting, organizing and updating this data. Once I had determined the method for syncing the lead time for a single supplier, the next step was to develop an automation tool that could be used to apply this logic for all suppliers in the Sam's Club supply chain.  This was accomplished with a combination of tools including Teradata and Microsoft Access/Excel, and the writing of various scripts in SQL/VBA.</p>
+			<p>The center piece of logic used is this project was calculating LTs using a specific function: Production time + Transit time + Processing time (time spent at a logistical facility). This was in contrast to the aforementioned method of calculating LTs based on a moving average. As a first step I had to reach out to various areas of the organization (Replenishment, Wal-Mart Transportation, ect) and develop a process for collecting, organizing and updating this data. Once I had determined the method for syncing the lead time for a single supplier, the next step was to develop an automation tool that could be used to apply this logic for all suppliers in the Sam's Club supply chain. This was accomplished with a combination of tools including Teradata and Microsoft Access/Excel, and the writing of various scripts in SQL/VBA.</p>
 						<div class="panel panel-default panel-right">
 			  <div class="panel-heading">Project Resuts</div>
 			  <div class="panel-body">
@@ -63,16 +61,16 @@
 			</div>
 		</br>
 		
-			<p>The final step in this project was implementing these changes across the organization and developing a process for maintaining these lead times. I presented to the various team leads in Replenishment and communicated these changes, and developed a discrepancy report that would show lead times that needed to be updated in the system.  In the end, using synchronized lead times had multiple benefits.  We were able to reduce overall lead times in the organization, as well as driving more LTL loads into our consolidation network, leading to fewer trucks on the road and real dollar savings for the organization.</p>
+			<p>The final step in this project was implementing these changes across the organization and developing a process for maintaining these lead times going forward. I presented to the various team leads in Replenishment and communicated the details of these changes, and developed a discrepancy report that would show lead times that needed to be updated in the system. In the end, using synchronized lead times had multiple benefits. We were able to reduce overall lead times in the organization, as well as driving more LTL loads into our consolidation network, leading to fewer trucks on the road and real dollar savings for the organization.</p>
 		</br>
 		</div>
 
 
 		<div class="row-full">
-			<h3 class="underline">International Comparison: The Drivers of Stockouts in Japan and America</h3>
+			<h3 class="underline">International Comparison: The Drivers of Stockouts in Japan and America, an Introduction</h3>
 			<ul>
-				<li><b>Goal:</b> Use data collected from supermakets in Japan and American in an attempt to compare the causes of Out of Stock in these two countries</li>
-				<li><b>Role:</b> Graduation thesis, University of Arkansas</li>
+				<li><b>Goal:</b> Use empirical data collected from supermakets in Japan and America in an attempt to compare the drivers of Out-of-Stock occurrences in these two countries</li>
+				<li><b>Role:</b> Introduction to my graduation thesis, University of Arkansas</li>
 				<li><b>Timeframe:</b> 2013/2014</li>
 				<li><b>Tools:</b> Regression analysis software, Microsoft Excel </li>
 			</ul>
@@ -88,7 +86,7 @@
 			</div>
 			<p>The data collection aspect of this project was a field study in which we went out in person to collect data from two supermarkets for several months, I recorded data from a store in Japan and a colleague recorded data from a store in the US. Next correlation tables were constructed to show the strength of the relationship between different variables in both the US and Japan data and regression analysis performed to determine what occurrences inside the store were most strongly associated with a product stocking out.</p>
 		</br>
-			<p>In conclusion there were several findings about the relationship between stock outs and various conditions inside the store.  Different factors such as price, number of substitute products, and the day of the week all have the potential to affect in-stock levels (the full results can be found here <%= link_to "here", "#" %>).  There are many lessons that Western business can draw from this report.  Packaging, pricing, are promotion are all done differently in Japan than they are in the USA.  There is tremendous opportunity to do business in Japan, but companies must understand how their experiences in domestically here at home can apply to their stores abroad.</p>
+			<p>In conclusion there were several findings about the relationship between stock outs and various conditions inside the store.  Different factors such as price, number of substitute products, and the day of the week all have the potential to affect in-stock levels.  There are many lessons that Western business can draw from this report.  Packaging, pricing, are promotion are all done differently in Japan than they are in the USA.  There is tremendous opportunity to do business in Japan, but companies must understand how their experiences in domestically here at home can apply to their stores abroad.</p>
 		</div>
 
 </div>
