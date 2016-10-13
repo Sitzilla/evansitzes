@@ -4,7 +4,8 @@ TestWebsite::Application.routes.draw do
 
  get "about" => "pages#about"
  
- get "projects" => "pages#projects"
+ get "programming_projects" => "pages#programming_projects"
+ get "analytics_projects" => "pages#analytics_projects"
  get "resume" => "pages#resume"
 
  get "index" => redirect("/home")
