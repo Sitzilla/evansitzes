@@ -1,0 +1,48 @@
+<% provide(:title, "Programming Projects") %>
+
+<div class="container">
+    <h1>Programming Projects</h1>
+    <h4>Here is an overview of some of the non-work related programming projects that I have worked on in my spare time.  Link to my personal Github account <span> <%= link_to "here.", "https://github.com/Sitzilla",  :target=>"_blank" %></span></h4>
+
+        <div class="row-full">
+            <h3 class="underline">Vocabulary Flashcards App</h3>
+            <ul>
+                <li><b>Overview:</b> Android app that makes REST calls to a web API to get vocabulary terms and displays the words in a 'flashcards' format.</li>
+                <li><b>Repos:</b> 
+                                <ul>
+                                    <li><b>Vocabulary app: </b><a class="linkUrls" href="https://github.com/Sitzilla/VocabularyFlashcards">https://github.com/Sitzilla/VocabularyFlashcards</a></li>
+                                    <li><b>Web API: </b><a class="linkUrls" href="https://github.com/Sitzilla/VocabularyWebAPI">https://github.com/Sitzilla/VocabularyWebAPI</a></li>
+                                </ul>
+                </li>
+                <li><b>Tools Used:</b> Spring Boot, Java 8, Maven, MySQL, Heroku, Android Studios, Google Play Store  </li>
+            </ul>
+
+        <!-- <%= render 'layouts/tproject' %> -->
+
+        <div class="rImage">
+                <%= image_tag("app1.png", :alt => "rss feed" ) %>
+        </div>
+
+            <p>As someone who loves studying languages AND programming, I thought I would try my hand at app development.  The app supports the three languages that I have studied over my life: Japanese, Korean, and Chinese.</p>
+        </br>
+            <p>There is a Spring Boot web API hosted on Heroku, with endpoints for getting different vocabulary terms, with the ability to filter on both category (verbs, adjectives, etc.) and level (scale 1-5). This API hooks into a small MySQL database I have hosted holding information on vocabulary terms and their associated metadata.</p>
+
+
+            <div class="panel panel-default panel-left">
+              <div class="panel-heading">Tech Used</div>
+              <div class="panel-body">
+                <ul>
+                    <li>Spring boot-base web service</li>
+                    <li>Android Studio</li>
+                    <li>Heroku for hosting</li>
+                    <li>MySql backed app</li>
+                </ul>
+             </div>
+            </div>
+
+        </br>
+            <p>The project was a great introduction to me with several new technologies. Building a web API backed mobile app from the bottom-up was a great learning experience, and gave me an application that I use everyday for my language learning hobby.</p>
+    
+        </div>  
+
+</div>
