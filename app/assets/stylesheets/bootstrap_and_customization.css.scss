@@ -395,6 +395,11 @@ float: right;
   }
 }
 
+.linkUrls {
+  font-size: 1em;
+  color: #FF2C00;
+}
+
 .row-full {
   width: 100%;
   clear: left;
@@ -414,6 +419,14 @@ float: right;
 .ctable {
     @include right_config;
     margin: 1%;
+  img {
+  width: 100%;
+  }
+}
+.rImage {
+    float: right;
+    width: 25%;
+    margin: 5%;
   img {
   width: 100%;
   }

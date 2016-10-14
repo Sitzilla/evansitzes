@@ -2,25 +2,30 @@
 
 <div class="container">
     <h1>Programming Projects</h1>
-    <h4>To outline some of my skills and abilities, here are a few brief introductions to some projects that I have worked on, the tools/methodologies used, and their outcomes.</h4>
+    <h4>Here is an overview of some of the non-work related programming projects that I have worked on in my spare time.  Link to my personal Github account <span> <%= link_to "here.", "https://github.com/Sitzilla",  :target=>"_blank" %></span></h4>
+
         <div class="row-full">
             <h3 class="underline">Vocabulary Flashcards App</h3>
             <ul>
-                <li><b>Goal:</b> To smooth the flow of inbound freight volume</li>
-                <li><b>Role:</b> Wal-Mart Inbound Strategy Team</li>
-                <li><b>Timeframe:</b> Summer 2011</li>
-                <li><b>Tools Used:</b> BI, Microsoft Access/Excel, VBA, SQL </li>
+                <li><b>Overview:</b> Android app that makes REST calls to a web API to get vocabulary terms and displays the words in a 'flashcards' format.</li>
+                <li><b>Repos:</b> 
+                                <ul>
+                                    <li><b>Vocabulary app: </b><a class="linkUrls" href="https://github.com/Sitzilla/VocabularyFlashcards">https://github.com/Sitzilla/VocabularyFlashcards</a></li>
+                                    <li><b>Web API: </b><a class="linkUrls" href="https://github.com/Sitzilla/VocabularyWebAPI">https://github.com/Sitzilla/VocabularyWebAPI</a></li>
+                                </ul>
+                </li>
+                <li><b>Tools Used:</b> Spring Boot, Java 8, Maven, MySQL, Heroku, Android Studios, Google Play Store  </li>
             </ul>
 
         <!-- <%= render 'layouts/tproject' %> -->
 
-        <div class="ctable">
-                <%= image_tag("econ-robots.jpg", :alt => "rss feed" ) %>
+        <div class="rImage">
+                <%= image_tag("app1.png", :alt => "rss feed" ) %>
         </div>
 
-            <p>Created an app</p>
+            <p>As someone who loves studying languages AND programming, I thought I would try my hand at app development.  The app supports the three languages that I have studied over my life: Japanese, Korean, and Chinese.</p>
         </br>
-            <p>Put api stuff here</p>
+            <p>There is a Spring Boot web API hosted on Heroku, with endpoints for getting different vocabulary terms, with the ability to filter on both category (verbs, adjectives, etc.) and level (scale 1-5). This API hooks into a small MySQL database I have hosted holding information on vocabulary terms and their associated metadata.</p>
 
 
             <div class="panel panel-default panel-left">
@@ -36,7 +41,7 @@
             </div>
 
         </br>
-            <p>And my final</p>
+            <p>The project was a great introduction to me with several new technologies. Building a web API backed mobile app from the bottom-up was a great learning experience, and gave me an application that I use everyday for my language learning hobby.</p>
     
         </div>  
 
