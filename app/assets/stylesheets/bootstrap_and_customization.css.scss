@@ -1,6 +1,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 /* div {
    border: 1px solid red !important;
 }
@@ -375,7 +375,10 @@ float: right;
 }
 .panel {
   width: 25%;
-  margin: 2.5%;
+  margin-bottom: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
 
   .panel-heading {
     background-color: #0D56A6;
@@ -426,7 +429,9 @@ float: right;
 .rImage {
     float: right;
     width: 25%;
-    margin: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
   img {
   width: 100%;
   }
