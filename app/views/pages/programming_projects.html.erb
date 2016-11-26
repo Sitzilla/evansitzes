@@ -17,10 +17,8 @@
                 <li><b>Tools Used:</b> Spring Boot, Java 8, Maven, MySQL, Heroku, Android Studios, Google Play Store  </li>
             </ul>
 
-        <!-- <%= render 'layouts/tproject' %> -->
-
         <div class="rImage">
-                <%= image_tag("app1.png", :alt => "rss feed" ) %>
+            <%= render 'layouts/rotate_project_android' %>
         </div>
 
             <p>As someone who loves studying languages AND programming, I thought I would try my hand at app development.  The app supports the three languages that I have studied over my life: Japanese, Korean, and Chinese.</p>
@@ -41,7 +39,72 @@
             </div>
 
         </br>
-            <p>The project was a great introduction to me with several new technologies. Building a web API backed mobile app from the bottom-up was a great learning experience, and gave me an application that I use everyday for my language learning hobby.</p>
+            <p>The project was a great introduction to me with several new technologies. Building a web API backed mobile app from the bottom-up was a great learning experience. I learned a lot about the Spring Framework and dependency injection in general that I have applied at my work and in other projects. 
+        </div>
+
+        <div class="row-full">
+
+        <h3 class="underline">RPG Game</h3>
+            <ul>
+                <li><b>Overview:</b> A single player RPG that uses the LibGDX framework.
+                    </br> ***Note: currently a WIP project
+                </li>
+                <li><b>Repo:</b> 
+                                <ul>
+                                    <li><b>Vocabulary app: </b><a class="linkUrls" target="_blank" href="https://github.com/Sitzilla/TwilightEternalGame">https://github.com/Sitzilla/TwilightEternalGame</a></li>
+                                
+                                </ul>
+                </li>
+                <li><b>Tools Used:</b> Java 8, Gradle, LibGDX, Jackson Yaml extension </li>
+            </ul>
+
+        <div class="rImage">
+                <!-- <%= image_tag("app1.png", :alt => "rss feed" ) %> -->
+            <%= render 'layouts/rotate_project_game' %>
+        </div>
+
+            <h5>Plot:</h5>
+            <p>This land has been ravaged by a war between the forces of good and evil, the neverending combat between the armies of light and the servants of darkness has thrown the world into an Eternal Twilight. Young hero... your destiny awaits!</p>
+        </br>
+            <p>My first attempt at creating a more complex game; this was first started as a hack-week project. It uses the LibGDX framework, and it introduced me to several gaming concepts such as collision detection, sprite animation, and maintaining state across a large application.  Configurations and state are managed through yaml resource files.
+            </p>
+        </div>
+
+        <div class="row-full">
+
+        <h3 class="underline">Tic-Tac-Toe</h3>
+            <ul>
+                <li><b>Overview:</b>A single player Tic-Tac-Toe game with a computer opponent that implements a minimax algorithm to play against the user.</li>
+                <li><b>Repo:</b> 
+                                <ul>
+                                    <li><b>NineSquare app: </b><a class="linkUrls" target="_blank" href="https://github.com/Sitzilla/nineSquare">https://github.com/Sitzilla/nineSquare</a></li>
+                                </ul>
+                </li>
+                <li><b>Tools Used:</b> Java 8, Swing, MinMax Algorithm </li>
+            </ul>
+
+        <div class="rImage">
+              <%= render 'layouts/rotate_project' %>
+        </div>
+
+            <p>As one of my first major programming projects, this was a good introduction to Java and some of its standard packages. I gained a firmer understanding of both event driven and object oriented programming, and implemented one of my first more complex algorithms.</p>
+        </br>
+            <p>The game is a simple tic-tac-toe board where the player goes first, and turns alternate between the player and the computer. The computer is unbeatable and the best-case outcome is a tie-game with the human, and will often result in a computer-win if the the human player is not careful. The computer will even employ basic strategies of blocking and forking whenever possible, which lead to its success in gameplay.</p>
+
+
+            <div class="panel panel-default panel-left">
+              <div class="panel-heading">Main Takeaway</div>
+              <div class="panel-body">
+                <ul>
+                    <li>Intro to event driven programming</li>
+                    <li>One of my first full Java projects</li>
+                    <li>Deeper understanding of MinMax</li>
+                </ul>
+             </div>
+            </div>
+
+        </br>
+            <p>The minmax algorithm is fairly basic due to the simplicity of the game. It recursively searches the gameboard to a depth equal to the remaining maximum moves to be played. Different point values are assigned to different game states (winning/losing, 2 consecutive pieces, etc.) and assigns points based on the outcomes. It opts for the choice that leads to the highest number of points.</p>
     
         </div>  
 
