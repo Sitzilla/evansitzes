@@ -1,7 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
-/* div {
+/*div {
    border: 1px solid red !important;
 }
 
@@ -163,6 +163,23 @@ div.container {
   .left-column {
     @include left_config;
     margin-bottom: 2.5%;
+
+    img {
+      max-width: 50px;
+      margin-right: 1.5%;
+    }
+    li a {
+      color: #04356C;
+    }
+    span.glyphicon-chevron-right {
+      color: #04356C;
+    }
+  }
+
+    .right-column-main {
+    @include right_config;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
     img {
       max-width: 50px;
