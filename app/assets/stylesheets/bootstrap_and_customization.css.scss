@@ -150,12 +150,12 @@ background-repeat: no-repeat;
 
 div.container {
   background-color: white;
- 
-  width: 60%; 
+
+  width: 60%;
   overflow:auto;
   border-style: groove;
   padding-bottom: 2.5%;
-} 
+}
 .main {
   border-top: 1px solid #ececec;
   padding-top: 15px;
@@ -196,14 +196,14 @@ div.container {
 
   .right-column {
    @include right_config;
-     
+
     .item {
       max-width: 100%;
       max-height: 26em;
 
       margin-left:auto;
-      margin-right:auto;    
-      width: 100%;      
+      margin-right:auto;
+      width: 100%;
 
      /*img {
       width: 100%;
@@ -228,12 +228,45 @@ div.container {
     }
   }
 
+  .right-column-carousel {
+   @include right_config;
+      max-width: 25%;
+      max-height: 25%;
+
+      margin-left: auto;
+      margin-right: 10%;
+      // width: 50%;
+      // height: 50%;
+
+     /*img {
+      width: 100%;
+      max-width: 300px;
+      float: right;
+      border-width: 0.25em;
+      border-style: groove;
+      border-color: #000000;
+
+/*        -webkit-transition: all 0.5s ease;
+         -moz-transition: all 0.5s ease;
+           -o-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+              transition: all 0.5s ease;
+
+
+        &:hover{
+          border-color: white;
+          border-width: 0.5em;
+
+      }*/
+
+  }
+
   .right-column-economist {
     width: 45%;
     overflow: hidden;
     float: right;
     clear: right;
-    margin-top: 2.5%;  
+    margin-top: 2.5%;
   }
 
   .pic-row-half {
@@ -272,7 +305,7 @@ div.container {
        -o-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
-    
+
     &:hover {
         border: 7px solid #000;
       border-radius: 75%;
@@ -315,37 +348,37 @@ transition-property: opacity; transition-duration: 500ms;
 .holding-right {
   display: none;
       float: right;
- width: 45%;    
+ width: 45%;
 }
 .holding-left {
   display: none;
       float: left;
- width: 45%;    
+ width: 45%;
 }
 
 
-.description{  
-    position:relative; /* absolute position (so we can position it where we want)*/  
-    bottom:0px; /* position will be on bottom */  
-    left:0px;  
-    width:100%;  
-    /* styling bellow */  
-    background-color:#04356C;  
-    font-size:15px;  
+.description{
+    position:relative; /* absolute position (so we can position it where we want)*/
+    bottom:0px; /* position will be on bottom */
+    left:0px;
+    width:100%;
+    /* styling bellow */
+    background-color:#04356C;
+    font-size:15px;
     text-align: center;
-    color:white;  
-     /* transparency */  
-    filter:alpha(opacity=60); /* IE transparency */  
+    color:white;
+     /* transparency */
+    filter:alpha(opacity=60); /* IE transparency */
 
     &:hover {
       color: #FF2C00;
       cursor: pointer; cursor: hand;
     }
-}  
-p.description_content{  
-    padding:5px;  
-    margin:0px;  
-}  
+}
+p.description_content{
+    padding:5px;
+    margin:0px;
+}
 
 .left-pic {
       width: 45%;
@@ -370,7 +403,7 @@ p.description_content{
     overflow: hidden;
     float: right;
     clear: right;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;
           border-width: 0.25em;
       border-style: groove;
       border-color: #000000;
@@ -402,7 +435,7 @@ float: right;
     color: white;
     font-size: 1.3em;
     line-height: 1.3em;
-    text-align: center; 
+    text-align: center;
   }
   .panel-body {
     padding-left: 0px;
@@ -469,17 +502,17 @@ h4 {
 }
 
 .resume-nav {
-text-align: center; 
+text-align: center;
 li {
   display: inline-block;
   font-size: 1.2em;
   line-height: 1.7em;
-  
+
   }
 }
 
   .label {
-  
+
   width: 75%;
   background-color: #0D56A6;
   color: white;
@@ -553,10 +586,10 @@ footer {
     width: 90%;
   }
 
-  .left-column { 
+  .left-column {
     @include default_480;
    }
-  .right-column  { 
+  .right-column  {
     @include default_480;
     img {
       max-width: 1000px;
@@ -565,11 +598,11 @@ footer {
          max-height: 20em;
   }
    }
-  .bottom-part { 
+  .bottom-part {
   @include default_480;
    }
 
-  .bottom-part  { 
+  .bottom-part  {
     @include default_480;
    }
   .right-column-economist {
@@ -591,7 +624,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     float: none;
-    
+
   }
 
   .holding-left {
@@ -640,10 +673,10 @@ footer {
     width: 75%;
   }
 
-  .left-column { 
+  .left-column {
      @include default_780;
        }
-  .right-column  { 
+  .right-column  {
      @include default_780;
          img {
       max-width: 1000px;
@@ -651,7 +684,7 @@ footer {
        }
   .bottom-part { float: none; }
 
-  .bottom-part  { 
+  .bottom-part  {
      @include default_780;
        }
   .right-column-economist {
