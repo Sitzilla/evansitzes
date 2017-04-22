@@ -1,25 +1,30 @@
 <% provide(:title, "Home") %>
-<meta name='og:image' content='archer.png'/>    
+<meta name='og:image' content='archer.png'/>
 <% link_to image_tag("archer.png", :alt => "rss feed" ), "https://twitter.com/", :target=>"_blank", :class=>"icon" %>
 
 <div class="container">
 
-    <h1>Welcome To My ' Hello World '</h1>
+    <h1 class="left-column">My Story</h1>
 
     <div class="main">
     	<div class="left-column">
 	        <p>
-            I am a graduate of the University of Arkansas and work as a Software Engineer at a technology startup in Seattle, WA called Simply Measured.  Though I am young, I have a drive to learn and a constant goal to further educate myself.  Currently I am attempting to increase my knowledge of software and coding skills through projects at work, as well as with several personal side projects. This first attempt at a website is to test some basic functionality, become familiar with the Rails framework, and serve as my introduction to the world!  My goal is to become an engineer who works every day to solve problems and build solutions, and to never stop learning new things.  
+            I am a graduate of the University of Arkansas and work as a Software Engineer at a technology startup in Seattle, WA called Simply Measured.
+            Though I am young, I have a drive to learn and a constant goal to further educate myself.  Currently I am attempting to increase my knowledge
+            of software and coding skills through projects at work, as well as with several personal side projects.
           </p>
           <p>
-            I have a slew of interests that include reading good books, studying interesting subject matter, and meeting new people. Any questions or observations please feel free to send me a message at esitzes42@gmail.com, or reach out via social media. 
+            My goal is to become an engineer who works every day to solve problems and build solutions, and to never stop learning new things.
+          </p>
+          <p>
+            I have a slew of interests that include reading good books, studying interesting subject matter, and meeting new people. Feel free to send me a message at esitzes42@gmail.com, or to reach out via social media.
           </p>
       </div>
 
       <%= render 'layouts/rotate' %>
 
 <!--       <%= render 'layouts/economist' %>
- -->      
+ -->
 
       <div class="right-column-main">
             <%= link_to image_tag("linkedin.jpg", :alt => "rss feed" ), "https://www.linkedin.com/in/evan-sitzes", :target=>"_blank", :class=>"icon" %>
